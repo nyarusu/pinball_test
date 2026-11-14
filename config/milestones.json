@@ -1,0 +1,7 @@
+{
+  "milestones": [
+    { "id": "1M", "score": 1000000, "label": "1M", "effect": "cyan-glow" },
+    { "id": "10M", "score": 10000000, "label": "10M", "effect": "gold-text" },
+    { "id": "100M", "score": 100000000, "label": "100M", "effect": "white-fade-gold-spark" }
+  ]
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ローグライクピンボール</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        background: #000;
+        overflow: hidden;
+      }
+      #game {
+        display: block;
+        width: 100%;
+        height: 100%;
+        touch-action: none;
+        cursor: crosshair;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/game-DN8a6bPH.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/CollisionEvents-cbPukNaN.js">
+  </head>
+  <body>
+    <canvas id="game" width="1280" height="720"></canvas>
+  </body>
+</html>

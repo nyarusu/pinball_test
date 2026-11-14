@@ -1,0 +1,26 @@
+{
+  "maxSpeed": 3000,
+  "skills": [
+    {
+      "id": "SK-01",
+      "name": "チルト",
+      "enabled": true,
+      "description": "全活動ボールへ 600px/s の斜め上速度を加算する。真上から左右へ 15°〜45°。",
+      "params": { "impulse": 600, "angleMinDeg": 15, "angleMaxDeg": 45 }
+    },
+    {
+      "id": "SK-02",
+      "name": "上昇気流",
+      "enabled": true,
+      "description": "全活動ボールの縦速度 vy に -800px/s を加算する。",
+      "params": { "vyAdd": -800 }
+    },
+    {
+      "id": "SK-03",
+      "name": "フィーバー",
+      "enabled": true,
+      "description": "全活動ボールの最終倍率を 360ステップ（3.0秒）のあいだ ×3.0 にする。",
+      "params": { "durationSteps": 360, "finalMult": 3 }
+    }
+  ]
+}

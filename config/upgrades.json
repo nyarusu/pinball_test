@@ -1,0 +1,329 @@
+{
+  "cards": [
+    {
+      "id": "PU-01",
+      "name": "加点",
+      "category": "PU",
+      "handler": "pinFixedAdd",
+      "enabled": true,
+      "stackable": true,
+      "rarity": "r",
+      "description": "ヒット時の獲得スコアが +100 される。（重複可／効果範囲：広域）",
+      "params": {
+        "radius": 130,
+        "fixedAdd": 100
+      }
+    },
+    {
+      "id": "PU-02",
+      "name": "倍率",
+      "category": "PU",
+      "handler": "pinNormalMult",
+      "enabled": true,
+      "stackable": true,
+      "rarity": "r",
+      "description": "ヒット時のスコアが 3倍 になる。（重複時は乗算／効果範囲：狭い）",
+      "params": {
+        "radius": 50,
+        "normalMult": 3
+      }
+    },
+    {
+      "id": "PU-03",
+      "name": "成長",
+      "category": "PU",
+      "handler": "pinGrowth",
+      "enabled": true,
+      "stackable": true,
+      "rarity": "r",
+      "description": "ヒットするたび、次のヒットからこのピンのスコア倍率が永続的に +25% される（最大 +1000%）。連鎖や複製などの効果でも成長する。（重複可）",
+      "params": {
+        "radius": 90,
+        "growthAdd": 0.25,
+        "growthCap": 10
+      }
+    },
+    {
+      "id": "PU-04",
+      "name": "連鎖",
+      "category": "PU",
+      "handler": "pinChain",
+      "enabled": true,
+      "stackable": false,
+      "rarity": "r",
+      "description": "ヒット時、他のピン1つをランダムに選んで同時に発動させる（対象ピンの強化効果も適用／再連鎖はしない）。（重複不可）",
+      "params": {
+        "radius": 90,
+        "depth": 1
+      }
+    },
+    {
+      "id": "PU-05",
+      "name": "密度誘爆",
+      "category": "PU",
+      "handler": "pinDensity",
+      "enabled": true,
+      "stackable": true,
+      "rarity": "r",
+      "description": "ヒット時、周囲にある他のピン1つにつきスコア +80 を獲得する。（重複可）",
+      "params": {
+        "radius": 90,
+        "neighborRadius": 90,
+        "addPerNeighbor": 80
+      }
+    },
+    {
+      "id": "PU-06",
+      "name": "ハイコンボ黄金",
+      "category": "PU",
+      "handler": "pinGolden",
+      "enabled": true,
+      "stackable": false,
+      "rarity": "r",
+      "description": "10コンボ以上 のとき、このピンの最終スコアが 4倍 になる。（重複不可／効果範囲：狭い）",
+      "params": {
+        "radius": 60,
+        "comboThreshold": 10,
+        "finalMult": 4
+      }
+    },
+    {
+      "id": "PU-08",
+      "name": "反発",
+      "category": "PU",
+      "handler": "pinRestitution",
+      "enabled": true,
+      "stackable": false,
+      "rarity": "r",
+      "description": "ピンの反発力が大きくアップし、ヒット時の獲得スコアが +50 される。（重複不可／効果範囲：広域）",
+      "params": {
+        "radius": 130,
+        "restitutionAdd": 0.3,
+        "restitutionCap": 1.2,
+        "fixedAdd": 50
+      }
+    },
+    {
+      "id": "PU-09",
+      "name": "スピードスター",
+      "category": "PU",
+      "handler": "pinSpeedStar",
+      "enabled": true,
+      "stackable": false,
+      "rarity": "r",
+      "description": "ヒット時のボールの速度が速いほど、スコア倍率が大きくアップする（最大 11倍）。（重複不可）",
+      "params": {
+        "radius": 90,
+        "speedDivisor": 300,
+        "speedMultCap": 11
+      }
+    },
+    {
+      "id": "PU-10",
+      "name": "コンボブースター",
+      "category": "PU",
+      "handler": "pinComboBooster",
+      "enabled": true,
+      "stackable": true,
+      "rarity": "r",
+      "description": "ボールが直接ヒットしたときのコンボ増加量が +1 から +3 になる（重複時はさらに+2ずつ増加）。（重複可）",
+      "params": {
+        "radius": 90,
+        "comboBase": 1,
+        "comboPerStack": 2
+      }
+    },
+    {
+      "id": "PU-11",
+      "name": "共鳴",
+      "category": "PU",
+      "handler": "pinResonance",
+      "enabled": true,
+      "stackable": false,
+      "rarity": "r",
+      "description": "ヒットするたび、そのボールが回収されるまで「強化済みピン」のスコア倍率が +40% ずつ累積アップする（上限なし／次のヒットから適用／連鎖等でも発動）。（重複不可）",
+      "params": {
+        "radius": 90,
+        "resonanceAdd": 0.4
+      }
+    },
+    {
+      "id": "AR-01",
+      "name": "倍率エリア",
+      "category": "AR",
+      "handler": "areaMult",
+      "enabled": true,
+      "stackable": true,
+      "rarity": "r",
+      "description": "通過すると 3秒間、獲得スコアが 3倍 になる（最大2回分まで重複し、2つ重なると 9倍／3つ目以降は効果時間を上書き延長）。",
+      "params": {
+        "radius": 80,
+        "durationSteps": 360,
+        "multOne": 3,
+        "multTwo": 9,
+        "reenterCdSteps": 12,
+        "slots": 2
+      }
+    },
+    {
+      "id": "AR-02",
+      "name": "加点エリア",
+      "category": "AR",
+      "handler": "areaFixedAdd",
+      "enabled": true,
+      "stackable": true,
+      "rarity": "r",
+      "description": "このエリア内にあるピンにヒットしたとき、獲得スコアが +150 される（エリアが重なると効果も加算）。",
+      "params": {
+        "radius": 80,
+        "fixedAdd": 150
+      }
+    },
+    {
+      "id": "AR-03",
+      "name": "ボール倍率エリア",
+      "category": "AR",
+      "handler": "areaBallMult",
+      "enabled": true,
+      "stackable": true,
+      "rarity": "r",
+      "description": "ボールが通過するたび、そのボールのスコア倍率が +100%（+1倍） 上昇する（同じエリアは0.5秒ごとに再発動）。",
+      "params": {
+        "radius": 80,
+        "ballMultAdd": 1,
+        "cooldownSteps": 60
+      }
+    },
+    {
+      "id": "AR-04",
+      "name": "チャージエリア",
+      "category": "AR",
+      "handler": "areaCharge",
+      "enabled": true,
+      "stackable": true,
+      "rarity": "r",
+      "description": "ボールがエリア内にいる間、0.1秒ごと にコンボ数 +1 と、そのボールのスコア倍率 +10% を獲得する。",
+      "params": {
+        "radius": 80,
+        "tickSteps": 12,
+        "comboAdd": 1,
+        "ballMultAdd": 0.1
+      }
+    },
+    {
+      "id": "AR-05",
+      "name": "複製エリア",
+      "category": "AR",
+      "handler": "areaDuplicate",
+      "enabled": true,
+      "stackable": true,
+      "rarity": "r",
+      "description": "このエリア内でピンにヒットしたとき、50%の確率 でピンの効果がもう1回発動する（エリアを重ねても追加発動は1回まで）。",
+      "params": {
+        "radius": 80,
+        "chance": 0.5
+      }
+    },
+    {
+      "id": "AR-07",
+      "name": "渦引力エリア",
+      "category": "AR",
+      "handler": "areaVortex",
+      "enabled": true,
+      "stackable": true,
+      "rarity": "r",
+      "description": "エリア内のボールを時計回りに回転させながら中心へ引き寄せる（3秒間連続で留まると一時解除され、外に出て0.5秒後に再起動）。",
+      "params": {
+        "radius": 80,
+        "pullAccel": 400,
+        "tangentAccel": 250,
+        "fadeRadius": 15,
+        "accelCap": 1000,
+        "maxStaySteps": 360,
+        "cooldownSteps": 60
+      }
+    },
+    {
+      "id": "AR-08",
+      "name": "反重力エリア",
+      "category": "AR",
+      "handler": "areaAntigravity",
+      "enabled": true,
+      "stackable": true,
+      "rarity": "r",
+      "description": "落下中のボールが進入すると、上向きに強く跳ね上げる（同じエリアは1.5秒ごとに再発動）。",
+      "params": {
+        "radius": 80,
+        "minUpSpeed": 600,
+        "cooldownSteps": 180
+      }
+    },
+    {
+      "id": "AR-09",
+      "name": "エコーエリア",
+      "category": "AR",
+      "handler": "areaEcho",
+      "enabled": true,
+      "stackable": true,
+      "rarity": "r",
+      "description": "通過時、そのボールが直前に直接ヒットしたピン（最大2つ）の衝突効果をその場で再発動させる（同じエリアは0.5秒ごとに再発動）。",
+      "params": {
+        "radius": 80,
+        "recentPinCount": 2,
+        "depth": 1,
+        "cooldownSteps": 60
+      }
+    },
+    {
+      "id": "AR-10",
+      "name": "オーバーチャージ",
+      "category": "AR",
+      "handler": "areaOvercharge",
+      "enabled": true,
+      "stackable": true,
+      "rarity": "r",
+      "description": "通過するとボールの速度が +40% アップし、3秒間 ピンへの連続ヒット間隔が半分になる（最大2回分まで効果時間を延長）。",
+      "params": {
+        "radius": 80,
+        "speedMult": 1.4,
+        "maxSpeed": 3000,
+        "durationSteps": 360,
+        "collisionCdSteps": 3,
+        "reenterCdSteps": 12,
+        "slots": 2
+      }
+    },
+    {
+      "id": "PU-13",
+      "name": "連爆",
+      "category": "PU",
+      "handler": "pinBlast",
+      "enabled": true,
+      "stackable": false,
+      "rarity": "r",
+      "targetKind": "bumper",
+      "description": "【バンパー専用】 ボールが直接ヒットしたとき、近くにある他の「連爆」付きバンパーを最大3個まで同時に発動させる（再連鎖・複製誘発なし）。（重複不可）",
+      "params": {
+        "radius": 90,
+        "blastRadius": 75,
+        "maxTargets": 3
+      }
+    },
+    {
+      "id": "PU-14",
+      "name": "ハーモニー",
+      "category": "PU",
+      "handler": "pinHarmony",
+      "enabled": true,
+      "stackable": false,
+      "rarity": "r",
+      "targetKind": "pin",
+      "description": "【通常ピン専用】 直接ヒットするとエネルギーを1つチャージ。チャージ状態でバンパーに直接当たると消費し、次のヒットからそのボールのスコア倍率が +25% される（累計最大 +600%）。（重複不可）",
+      "params": {
+        "radius": 90,
+        "ballMultAdd": 0.25,
+        "bonusCap": 6
+      }
+    }
+  ]
+}

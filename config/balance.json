@@ -1,0 +1,68 @@
+{
+  "modes": [
+    { "id": "standard", "label": "スタンダード", "totalRounds": 5, "ballsPerRound": 3, "durationLabel": "約6分" },
+    { "id": "short", "label": "ショート", "totalRounds": 4, "ballsPerRound": 2, "durationLabel": "約4分" }
+  ],
+  "progressStages": [
+    {
+      "id": "all",
+      "minRound": 1,
+      "rarityWeights": { "c": 0, "r": 100, "sr": 0, "ur": 0 }
+    }
+  ],
+  "trialTimeoutSec": 30,
+  "fixedHz": 120,
+  "maxStepsPerFrame": 8,
+  "steps": {
+    "trialTimeout": 3600,
+    "chargeMax": 120,
+    "laneMove": 54,
+    "relaunchSuppress": 24,
+    "skillInputGuard": 12,
+    "ballSettle": 72,
+    "roundIntro": 144,
+    "collisionCooldown": 6,
+    "collisionCooldownOvercharge": 3,
+    "stuck": 180,
+    "areaTick": 12,
+    "areaReenter": 12,
+    "areaCooldownDefault": 60,
+    "areaCooldownAntigravity": 180,
+    "vortexMaxStay": 360,
+    "vortexRestartCooldown": 60,
+    "buffDuration": 360
+  },
+  "physics": {
+    "ppm": 100,
+    "gravityY": 15,
+    "ballRadius": 10,
+    "ballRestitution": 0.5,
+    "linearDamping": 0.05,
+    "wallThicknessMin": 20,
+    "vmin": 900,
+    "vmax": 2200,
+    "maxSpeed": 3000,
+    "launchJitterRatio": 0.01,
+    "angleAdjustDeg": 15,
+    "angleDragPx": 120,
+    "angleOvershootPx": 80,
+    "grazeSpeed": 50,
+    "rescueImpulse": 300,
+    "filterGroupIndex": -1
+  },
+  "limits": {
+    "maxAreas": 8,
+    "maxPinUpgrades": 5,
+    "rerollsPerRun": 2,
+    "scoreCap": 9000000000000000,
+    "historyLimit": 2000,
+    "deriveDepth": 1,
+    "eventsPerCollision": 64,
+    "eventsPerBall": 5000,
+    "growthCap": 10,
+    "comboMultCap": 10,
+    "comboStep": 0.05,
+    "maxRescues": 3,
+    "logRing": 500
+  }
+}

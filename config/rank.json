@@ -1,0 +1,14 @@
+{
+  "standard": [
+    { "rank": "S", "minScore": 100000000 },
+    { "rank": "A", "minScore": 10000000 },
+    { "rank": "B", "minScore": 1000000 },
+    { "rank": "C", "minScore": 100000 }
+  ],
+  "short": [
+    { "rank": "S", "minScore": 1000000 },
+    { "rank": "A", "minScore": 100000 },
+    { "rank": "B", "minScore": 10000 },
+    { "rank": "C", "minScore": 1000 }
+  ]
+}

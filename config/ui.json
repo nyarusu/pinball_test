@@ -1,0 +1,119 @@
+{
+  "viewport": { "width": 1280, "height": 720 },
+  "board": { "width": 800, "height": 1000, "fitScale": 0.72 },
+  "scoreDisplay": {
+    "countUpSec": 0.3,
+    "floatTextPool": 50,
+    "floatTextMaxPerSec": 30,
+    "hitShakeSec": 0.15,
+    "man": 10000,
+    "oku": 100000000,
+    "cho": 1000000000000,
+    "kei": 10000000000000000
+  },
+  "nameEntry": { "maxLength": 3, "buttonSize": 48 },
+  "rankingSize": 5,
+  "particlePool": 200,
+  "audio": {
+    "masterVolume": 0.8,
+    "seVolume": 0.9,
+    "bgmVolume": 0.22,
+    "pausedBgmGain": 0.35,
+    "maxVoices": 24,
+    "mutedStorageKey": "pinball.audio.muted",
+    "octaveMult": 2.0,
+    "minIntervalSec": {
+      "hit": 0.03,
+      "bumper": 0.06,
+      "launch": 0.25,
+      "upgrade": 0.15,
+      "skill": 0.25,
+      "roundStart": 0.5,
+      "result": 0.5,
+      "fanfare": 2.0
+    },
+    "files": {
+      "hitLow": "./audio/hit_low.mp3",
+      "hitMid": "./audio/hit_mid.mp3",
+      "hitHigh": "./audio/hit_high.mp3",
+      "bumper": "./audio/bumper.mp3",
+      "launch": "./audio/launch.mp3",
+      "upgrade": "./audio/upgrade.mp3",
+      "skill": "./audio/skill.mp3",
+      "roundStart": "./audio/round_start.mp3",
+      "result": "./audio/result.mp3",
+      "fanfare": "./audio/fanfare.mp3",
+      "bgm": "./audio/bgm.mp3"
+    },
+    "hit": {
+      "midScore": 300,
+      "highScore": 3000,
+      "baseHz": [330, 494, 784],
+      "volumes": [0.35, 0.4, 0.45],
+      "decaySec": 0.08,
+      "bellRatio": 2.76,
+      "scaleSemitones": [0, 2, 4, 7, 9],
+      "maxComboSteps": 10
+    },
+    "bumper": { "wave": "triangle", "startHz": 150, "endHz": 40, "durationSec": 0.15, "volume": 0.55, "noiseVolume": 0 },
+    "launch": { "wave": "sine", "startHz": 200, "endHz": 900, "durationSec": 0.25, "volume": 0.3, "noiseVolume": 0.25 },
+    "skill": { "wave": "sine", "startHz": 400, "endHz": 1600, "durationSec": 0.3, "volume": 0.35, "noiseVolume": 0 },
+    "jingles": {
+      "upgrade": {
+        "wave": "sine",
+        "steps": [[523.25, 659.25], [659.25, 783.99], [783.99, 1046.5], [1046.5, 1318.5]],
+        "stepSec": 0.06,
+        "noteSec": 0.3,
+        "volume": 0.22
+      },
+      "roundStart": {
+        "wave": "square",
+        "steps": [[392], [523.25], [659.25]],
+        "stepSec": 0.09,
+        "noteSec": 0.18,
+        "volume": 0.12
+      },
+      "result": {
+        "wave": "triangle",
+        "steps": [[523.25, 659.25], [587.33, 783.99], [659.25, 783.99, 1046.5]],
+        "stepSec": 0.18,
+        "noteSec": 0.5,
+        "volume": 0.22
+      },
+      "fanfare": {
+        "wave": "square",
+        "steps": [
+          [523.25, 659.25, 783.99],
+          [523.25, 659.25, 783.99],
+          [587.33, 698.46, 880],
+          [783.99, 987.77, 1174.66],
+          [1046.5, 1318.5, 1568]
+        ],
+        "stepSec": 0.16,
+        "noteSec": 0.7,
+        "volume": 0.1
+      }
+    },
+    "bgm": {
+      "bpm": 100,
+      "rootHz": 110,
+      "chords": [[0, 3, 7], [8, 12, 15], [3, 7, 10], [10, 14, 17]],
+      "padVolume": 0.5,
+      "arpVolume": 0.35,
+      "bassVolume": 0.6,
+      "lookaheadSec": 0.6
+    }
+  },
+  "pinColors": {
+    "scoreBaseline": 100,
+    "restitutionBaseline": 0.88,
+    "scoreThresholds": [0, 0.5, 1, 1.000001, 3, 7],
+    "scoreFills": ["#8ea0b4", "#c5ceda", "#e7eef8", "#ffd0a6", "#ff3a40", "#ff46d0"],
+    "bumperCores": ["#8ea0b4", "#c5ceda", "#fff6d8", "#ffd0a6", "#ff3a40", "#ff46d0"],
+    "restitutionThresholds": [0.001, 0.15, 0.29],
+    "restitutionMarks": ["#b7fff6", "#3ddec8", "#0a9e86"],
+    "pinStroke": "#7d8da3",
+    "bumperFill": "#f0b429",
+    "bumperStroke": "#fff1c2"
+  }
+}
