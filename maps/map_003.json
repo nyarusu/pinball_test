@@ -1,0 +1,2721 @@
+{
+  "id": "map_003",
+  "width": 800,
+  "height": 1000,
+  "physics": {
+    "gravity": 1200,
+    "ballRadius": 10,
+    "ballRestitution": 0.7,
+    "airDrag": 0.05
+  },
+  "launch": {
+    "exitX": 770,
+    "exitY": 180,
+    "angleDeg": 0,
+    "vMin": 900,
+    "vMax": 2200,
+    "chargeSteps": 120,
+    "laneSteps": 54
+  },
+  "walls": [
+    {
+      "id": "wall_top",
+      "x1": 0,
+      "y1": 0,
+      "x2": 800,
+      "y2": 0,
+      "thickness": 20,
+      "expand": "outward"
+    },
+    {
+      "id": "wall_left",
+      "x1": 0,
+      "y1": 0,
+      "x2": 0,
+      "y2": 1000,
+      "thickness": 20,
+      "expand": "outward"
+    },
+    {
+      "id": "wall_right",
+      "x1": 800,
+      "y1": 0,
+      "x2": 800,
+      "y2": 1000,
+      "thickness": 20,
+      "expand": "outward"
+    },
+    {
+      "id": "wall_bottom_l",
+      "x1": 0,
+      "y1": 1000,
+      "x2": 270,
+      "y2": 1000,
+      "thickness": 20,
+      "expand": "outward"
+    },
+    {
+      "id": "wall_bottom_r",
+      "x1": 530,
+      "y1": 1000,
+      "x2": 800,
+      "y2": 1000,
+      "thickness": 20,
+      "expand": "outward"
+    },
+    {
+      "id": "wall_guide_l",
+      "x1": 0,
+      "y1": 800,
+      "x2": 280,
+      "y2": 960,
+      "thickness": 20,
+      "expand": "center",
+      "restitution": 0.7
+    },
+    {
+      "id": "wall_chute_l",
+      "x1": 270,
+      "y1": 960,
+      "x2": 270,
+      "y2": 1000,
+      "thickness": 20,
+      "expand": "center"
+    },
+    {
+      "id": "wall_guide_r",
+      "x1": 801.226179765897,
+      "y1": 802.452359531794,
+      "x2": 521.226179765897,
+      "y2": 962.452359531794,
+      "thickness": 20,
+      "expand": "center",
+      "restitution": 0.7
+    },
+    {
+      "id": "wall_chute_r",
+      "x1": 530,
+      "y1": 960,
+      "x2": 530,
+      "y2": 1000,
+      "thickness": 20,
+      "expand": "center"
+    },
+    {
+      "id": "wall_catch",
+      "x1": 280,
+      "y1": 1010,
+      "x2": 520,
+      "y2": 1010,
+      "thickness": 20,
+      "expand": "center"
+    },
+    {
+      "id": "wall_1",
+      "x1": 104.72344605779371,
+      "y1": 3.631569885623585,
+      "x2": 0.20932283514095917,
+      "y2": 142.75301867869115,
+      "thickness": 20,
+      "expand": "center"
+    },
+    {
+      "id": "wall_2",
+      "x1": 711.6304165847138,
+      "y1": -8.929824610182838,
+      "x2": 799.3022698463487,
+      "y2": 127.29874738097311,
+      "thickness": 20,
+      "expand": "center"
+    }
+  ],
+  "drains": [
+    {
+      "id": "drain_main",
+      "x": 280,
+      "y": 960,
+      "w": 240,
+      "h": 40
+    }
+  ],
+  "pins": [
+    {
+      "id": "pin_3",
+      "kind": "pin",
+      "x": 420,
+      "y": 150,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_4",
+      "kind": "pin",
+      "x": 430,
+      "y": 170,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.66
+    },
+    {
+      "id": "pin_5",
+      "kind": "pin",
+      "x": 440,
+      "y": 190,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.66
+    },
+    {
+      "id": "pin_6",
+      "kind": "pin",
+      "x": 450,
+      "y": 210,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.66
+    },
+    {
+      "id": "pin_7",
+      "kind": "pin",
+      "x": 460,
+      "y": 230,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_8",
+      "kind": "pin",
+      "x": 470,
+      "y": 250,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_9",
+      "kind": "pin",
+      "x": 486.3039408631284,
+      "y": 268.9493431894786,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_11",
+      "kind": "pin",
+      "x": 370,
+      "y": 150,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_12",
+      "kind": "pin",
+      "x": 360,
+      "y": 170,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.66
+    },
+    {
+      "id": "pin_13",
+      "kind": "pin",
+      "x": 350,
+      "y": 190,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.66
+    },
+    {
+      "id": "pin_14",
+      "kind": "pin",
+      "x": 340,
+      "y": 210,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.66
+    },
+    {
+      "id": "pin_15",
+      "kind": "pin",
+      "x": 330,
+      "y": 230,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_16",
+      "kind": "pin",
+      "x": 320,
+      "y": 250,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_17",
+      "kind": "pin",
+      "x": 310,
+      "y": 270,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_22",
+      "kind": "pin",
+      "x": 400,
+      "y": 20,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_23",
+      "kind": "pin",
+      "x": 400,
+      "y": 0,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_24",
+      "kind": "pin",
+      "x": 400,
+      "y": 40,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_44",
+      "kind": "pin",
+      "x": 550,
+      "y": 240,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_45",
+      "kind": "pin",
+      "x": 640,
+      "y": 300,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_46",
+      "kind": "pin",
+      "x": 670,
+      "y": 280,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_47",
+      "kind": "pin",
+      "x": 640,
+      "y": 260,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_48",
+      "kind": "pin",
+      "x": 520,
+      "y": 300,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_49",
+      "kind": "pin",
+      "x": 700,
+      "y": 260,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_50",
+      "kind": "pin",
+      "x": 610,
+      "y": 240,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_51",
+      "kind": "pin",
+      "x": 550,
+      "y": 320,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_52",
+      "kind": "pin",
+      "x": 580,
+      "y": 300,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_53",
+      "kind": "pin",
+      "x": 730,
+      "y": 280,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_54",
+      "kind": "pin",
+      "x": 610,
+      "y": 320,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_55",
+      "kind": "pin",
+      "x": 700,
+      "y": 300,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_56",
+      "kind": "pin",
+      "x": 610,
+      "y": 280,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_57",
+      "kind": "pin",
+      "x": 520,
+      "y": 260,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_58",
+      "kind": "pin",
+      "x": 730,
+      "y": 320,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_59",
+      "kind": "pin",
+      "x": 670,
+      "y": 240,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_60",
+      "kind": "pin",
+      "x": 550,
+      "y": 280,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_61",
+      "kind": "pin",
+      "x": 580,
+      "y": 260,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_62",
+      "kind": "pin",
+      "x": 670,
+      "y": 320,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "bumper_4",
+      "kind": "bumper",
+      "x": 640,
+      "y": 390,
+      "r": 16,
+      "baseScore": 50,
+      "restitution": 1.2
+    },
+    {
+      "id": "bumper_5",
+      "kind": "bumper",
+      "x": 700,
+      "y": 390,
+      "r": 16,
+      "baseScore": 50,
+      "restitution": 1.2
+    },
+    {
+      "id": "bumper_6",
+      "kind": "bumper",
+      "x": 760,
+      "y": 390,
+      "r": 16,
+      "baseScore": 50,
+      "restitution": 1.2
+    },
+    {
+      "id": "pin_10",
+      "kind": "pin",
+      "x": 250,
+      "y": 240,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_18",
+      "kind": "pin",
+      "x": 160,
+      "y": 300,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_19",
+      "kind": "pin",
+      "x": 130,
+      "y": 280,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_20",
+      "kind": "pin",
+      "x": 160,
+      "y": 260,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_21",
+      "kind": "pin",
+      "x": 297.0664585432726,
+      "y": 288.6654030967025,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_63",
+      "kind": "pin",
+      "x": 100,
+      "y": 260,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_64",
+      "kind": "pin",
+      "x": 190,
+      "y": 240,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_65",
+      "kind": "pin",
+      "x": 247.2314139543668,
+      "y": 331.766490693941,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_66",
+      "kind": "pin",
+      "x": 220,
+      "y": 300,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_67",
+      "kind": "pin",
+      "x": 70,
+      "y": 280,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_68",
+      "kind": "pin",
+      "x": 190,
+      "y": 320,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_69",
+      "kind": "pin",
+      "x": 100,
+      "y": 300,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_70",
+      "kind": "pin",
+      "x": 190,
+      "y": 280,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_71",
+      "kind": "pin",
+      "x": 280,
+      "y": 260,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_72",
+      "kind": "pin",
+      "x": 70,
+      "y": 320,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_73",
+      "kind": "pin",
+      "x": 130,
+      "y": 240,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_74",
+      "kind": "pin",
+      "x": 250,
+      "y": 280,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_75",
+      "kind": "pin",
+      "x": 220,
+      "y": 260,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_76",
+      "kind": "pin",
+      "x": 130,
+      "y": 320,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_28",
+      "kind": "pin",
+      "x": 490,
+      "y": 460,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_29",
+      "kind": "pin",
+      "x": 500,
+      "y": 440,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_30",
+      "kind": "pin",
+      "x": 510,
+      "y": 420,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_31",
+      "kind": "pin",
+      "x": 520,
+      "y": 400,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_32",
+      "kind": "pin",
+      "x": 530,
+      "y": 380,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.4
+    },
+    {
+      "id": "pin_25",
+      "kind": "pin",
+      "x": 430,
+      "y": 580,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_26",
+      "kind": "pin",
+      "x": 440,
+      "y": 560,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_27",
+      "kind": "pin",
+      "x": 450,
+      "y": 540,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_34",
+      "kind": "pin",
+      "x": 460,
+      "y": 520,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_41",
+      "kind": "pin",
+      "x": 470,
+      "y": 500,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_42",
+      "kind": "pin",
+      "x": 480,
+      "y": 480,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_35",
+      "kind": "pin",
+      "x": 310,
+      "y": 460,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_36",
+      "kind": "pin",
+      "x": 300,
+      "y": 440,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_37",
+      "kind": "pin",
+      "x": 290,
+      "y": 420,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_38",
+      "kind": "pin",
+      "x": 280,
+      "y": 400,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_39",
+      "kind": "pin",
+      "x": 270,
+      "y": 380,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.4
+    },
+    {
+      "id": "pin_43",
+      "kind": "pin",
+      "x": 370,
+      "y": 580,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_77",
+      "kind": "pin",
+      "x": 360,
+      "y": 560,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_78",
+      "kind": "pin",
+      "x": 350,
+      "y": 540,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_79",
+      "kind": "pin",
+      "x": 340,
+      "y": 520,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_80",
+      "kind": "pin",
+      "x": 330,
+      "y": 500,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_81",
+      "kind": "pin",
+      "x": 320,
+      "y": 480,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_33",
+      "kind": "pin",
+      "x": 320,
+      "y": 380,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.4
+    },
+    {
+      "id": "pin_83",
+      "kind": "pin",
+      "x": 360,
+      "y": 380,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.4
+    },
+    {
+      "id": "pin_84",
+      "kind": "pin",
+      "x": 336.9609100522108,
+      "y": 410,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_85",
+      "kind": "pin",
+      "x": 400,
+      "y": 380,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.4
+    },
+    {
+      "id": "pin_87",
+      "kind": "pin",
+      "x": 379.131688586346,
+      "y": 410,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_88",
+      "kind": "pin",
+      "x": 440,
+      "y": 380,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.4
+    },
+    {
+      "id": "pin_90",
+      "kind": "pin",
+      "x": 423.93946075299584,
+      "y": 411.0237164464472,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_91",
+      "kind": "pin",
+      "x": 480,
+      "y": 380,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.4
+    },
+    {
+      "id": "pin_93",
+      "kind": "pin",
+      "x": 461.302467120481,
+      "y": 410.434155706827,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_94",
+      "kind": "pin",
+      "x": 368.39715253527686,
+      "y": 468.1681743260307,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 1
+    },
+    {
+      "id": "pin_95",
+      "kind": "pin",
+      "x": 401.1448910462308,
+      "y": 501.60284746472314,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 1
+    },
+    {
+      "id": "pin_96",
+      "kind": "pin",
+      "x": 418.626130744523,
+      "y": 468.62613074452304,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 1
+    },
+    {
+      "id": "pin_97",
+      "kind": "pin",
+      "x": 434.12160776643094,
+      "y": 498.3971525352769,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 1
+    },
+    {
+      "id": "pin_98",
+      "kind": "pin",
+      "x": 368.16817432603074,
+      "y": 502.06080388321544,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 1
+    },
+    {
+      "id": "bumper_2",
+      "kind": "bumper",
+      "x": 399.92882562322677,
+      "y": 543.5697100150829,
+      "r": 14,
+      "baseScore": 100,
+      "restitution": 1.2
+    },
+    {
+      "id": "bumper_1",
+      "kind": "bumper",
+      "x": 760,
+      "y": 250,
+      "r": 13,
+      "baseScore": 50,
+      "restitution": 1.2
+    },
+    {
+      "id": "bumper_11",
+      "kind": "bumper",
+      "x": 40,
+      "y": 250,
+      "r": 13,
+      "baseScore": 50,
+      "restitution": 1.2
+    },
+    {
+      "id": "bumper_12",
+      "kind": "bumper",
+      "x": 530,
+      "y": 490,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.2
+    },
+    {
+      "id": "bumper_13",
+      "kind": "bumper",
+      "x": 610,
+      "y": 490,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.2
+    },
+    {
+      "id": "bumper_14",
+      "kind": "bumper",
+      "x": 670,
+      "y": 490,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.2
+    },
+    {
+      "id": "bumper_15",
+      "kind": "bumper",
+      "x": 730,
+      "y": 490,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.2
+    },
+    {
+      "id": "pin_112",
+      "kind": "pin",
+      "x": 580,
+      "y": 450,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_113",
+      "kind": "pin",
+      "x": 640,
+      "y": 450,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_114",
+      "kind": "pin",
+      "x": 700,
+      "y": 450,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_115",
+      "kind": "pin",
+      "x": 760,
+      "y": 450,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "bumper_16",
+      "kind": "bumper",
+      "x": 0,
+      "y": 340,
+      "r": 10,
+      "baseScore": 50,
+      "restitution": 1.2
+    },
+    {
+      "id": "bumper_17",
+      "kind": "bumper",
+      "x": 800,
+      "y": 340,
+      "r": 10,
+      "baseScore": 50,
+      "restitution": 1.2
+    },
+    {
+      "id": "bumper_18",
+      "kind": "bumper",
+      "x": 800,
+      "y": 490,
+      "r": 10,
+      "baseScore": 100,
+      "restitution": 1.2
+    },
+    {
+      "id": "bumper_19",
+      "kind": "bumper",
+      "x": 0,
+      "y": 500,
+      "r": 10,
+      "baseScore": 50,
+      "restitution": 1.4
+    },
+    {
+      "id": "pin_82",
+      "kind": "pin",
+      "x": 550,
+      "y": 550,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_89",
+      "kind": "pin",
+      "x": 640,
+      "y": 610,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_110",
+      "kind": "pin",
+      "x": 670,
+      "y": 590,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_111",
+      "kind": "pin",
+      "x": 640,
+      "y": 570,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_116",
+      "kind": "pin",
+      "x": 520,
+      "y": 610,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_117",
+      "kind": "pin",
+      "x": 700,
+      "y": 570,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_118",
+      "kind": "pin",
+      "x": 610,
+      "y": 550,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_119",
+      "kind": "pin",
+      "x": 550,
+      "y": 630,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_120",
+      "kind": "pin",
+      "x": 580,
+      "y": 610,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_121",
+      "kind": "pin",
+      "x": 730,
+      "y": 590,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_122",
+      "kind": "pin",
+      "x": 610,
+      "y": 630,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_123",
+      "kind": "pin",
+      "x": 700,
+      "y": 610,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_124",
+      "kind": "pin",
+      "x": 610,
+      "y": 590,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_125",
+      "kind": "pin",
+      "x": 520,
+      "y": 570,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_126",
+      "kind": "pin",
+      "x": 730,
+      "y": 630,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_127",
+      "kind": "pin",
+      "x": 670,
+      "y": 550,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_128",
+      "kind": "pin",
+      "x": 550,
+      "y": 590,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_129",
+      "kind": "pin",
+      "x": 580,
+      "y": 570,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_130",
+      "kind": "pin",
+      "x": 670,
+      "y": 630,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "bumper_20",
+      "kind": "bumper",
+      "x": 760,
+      "y": 560,
+      "r": 13,
+      "baseScore": 100,
+      "restitution": 1.2
+    },
+    {
+      "id": "pin_131",
+      "kind": "pin",
+      "x": 490,
+      "y": 590,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_132",
+      "kind": "pin",
+      "x": 450,
+      "y": 620,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_133",
+      "kind": "pin",
+      "x": 490,
+      "y": 630,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_134",
+      "kind": "pin",
+      "x": 760,
+      "y": 610,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "bumper_21",
+      "kind": "bumper",
+      "x": 800,
+      "y": 630,
+      "r": 10,
+      "baseScore": 50,
+      "restitution": 1.2
+    },
+    {
+      "id": "bumper_22",
+      "kind": "bumper",
+      "x": 510,
+      "y": 690,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.2
+    },
+    {
+      "id": "bumper_24",
+      "kind": "bumper",
+      "x": 640,
+      "y": 690,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.2
+    },
+    {
+      "id": "bumper_25",
+      "kind": "bumper",
+      "x": 700,
+      "y": 690,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.2
+    },
+    {
+      "id": "bumper_28",
+      "kind": "bumper",
+      "x": 760,
+      "y": 690,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.2
+    },
+    {
+      "id": "bumper_26",
+      "kind": "bumper",
+      "x": 250,
+      "y": 440,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.3
+    },
+    {
+      "id": "bumper_29",
+      "kind": "bumper",
+      "x": 190,
+      "y": 440,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.3
+    },
+    {
+      "id": "bumper_30",
+      "kind": "bumper",
+      "x": 130,
+      "y": 440,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.3
+    },
+    {
+      "id": "bumper_31",
+      "kind": "bumper",
+      "x": 70,
+      "y": 440,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.3
+    },
+    {
+      "id": "bumper_32",
+      "kind": "bumper",
+      "x": 220,
+      "y": 500,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.3
+    },
+    {
+      "id": "bumper_33",
+      "kind": "bumper",
+      "x": 160,
+      "y": 500,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.3
+    },
+    {
+      "id": "bumper_34",
+      "kind": "bumper",
+      "x": 100,
+      "y": 500,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.3
+    },
+    {
+      "id": "bumper_35",
+      "kind": "bumper",
+      "x": 40,
+      "y": 500,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.3
+    },
+    {
+      "id": "bumper_36",
+      "kind": "bumper",
+      "x": 280,
+      "y": 500,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.3
+    },
+    {
+      "id": "bumper_37",
+      "kind": "bumper",
+      "x": 250,
+      "y": 560,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.3
+    },
+    {
+      "id": "bumper_38",
+      "kind": "bumper",
+      "x": 190,
+      "y": 560,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.3
+    },
+    {
+      "id": "bumper_39",
+      "kind": "bumper",
+      "x": 130,
+      "y": 560,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.3
+    },
+    {
+      "id": "bumper_40",
+      "kind": "bumper",
+      "x": 70,
+      "y": 560,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.3
+    },
+    {
+      "id": "bumper_41",
+      "kind": "bumper",
+      "x": 310,
+      "y": 560,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.4
+    },
+    {
+      "id": "pin_141",
+      "kind": "pin",
+      "x": 340,
+      "y": 690,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_142",
+      "kind": "pin",
+      "x": 330,
+      "y": 710,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_143",
+      "kind": "pin",
+      "x": 320,
+      "y": 730,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_148",
+      "kind": "pin",
+      "x": 310,
+      "y": 750,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_149",
+      "kind": "pin",
+      "x": 300,
+      "y": 770,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_150",
+      "kind": "pin",
+      "x": 290,
+      "y": 790,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_135",
+      "kind": "pin",
+      "x": 280,
+      "y": 810,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_136",
+      "kind": "pin",
+      "x": 270,
+      "y": 830,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_137",
+      "kind": "pin",
+      "x": 260,
+      "y": 850,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_138",
+      "kind": "pin",
+      "x": 460,
+      "y": 690,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_139",
+      "kind": "pin",
+      "x": 470,
+      "y": 710,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_140",
+      "kind": "pin",
+      "x": 480,
+      "y": 730,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_144",
+      "kind": "pin",
+      "x": 490,
+      "y": 750,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_145",
+      "kind": "pin",
+      "x": 500,
+      "y": 770,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_146",
+      "kind": "pin",
+      "x": 510,
+      "y": 790,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_147",
+      "kind": "pin",
+      "x": 520,
+      "y": 810,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_151",
+      "kind": "pin",
+      "x": 530,
+      "y": 830,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_152",
+      "kind": "pin",
+      "x": 540,
+      "y": 850,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "bumper_27",
+      "kind": "bumper",
+      "x": 400,
+      "y": 780,
+      "r": 22,
+      "baseScore": 50,
+      "restitution": 1
+    },
+    {
+      "id": "pin_153",
+      "kind": "pin",
+      "x": 360,
+      "y": 600,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_154",
+      "kind": "pin",
+      "x": 440,
+      "y": 600,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_155",
+      "kind": "pin",
+      "x": 350,
+      "y": 620,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "bumper_42",
+      "kind": "bumper",
+      "x": 440,
+      "y": 840,
+      "r": 22,
+      "baseScore": 50,
+      "restitution": 1
+    },
+    {
+      "id": "bumper_43",
+      "kind": "bumper",
+      "x": 360,
+      "y": 840,
+      "r": 22,
+      "baseScore": 50,
+      "restitution": 1
+    },
+    {
+      "id": "pin_156",
+      "kind": "pin",
+      "x": 450,
+      "y": 670,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_157",
+      "kind": "pin",
+      "x": 350,
+      "y": 670,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_158",
+      "kind": "pin",
+      "x": 400,
+      "y": 720,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_159",
+      "kind": "pin",
+      "x": 350,
+      "y": 780,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_160",
+      "kind": "pin",
+      "x": 450,
+      "y": 780,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_161",
+      "kind": "pin",
+      "x": 400,
+      "y": 880,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_162",
+      "kind": "pin",
+      "x": 310,
+      "y": 880,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_164",
+      "kind": "pin",
+      "x": 490,
+      "y": 880,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_163",
+      "kind": "pin",
+      "x": 610,
+      "y": 740,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_165",
+      "kind": "pin",
+      "x": 700,
+      "y": 800,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_166",
+      "kind": "pin",
+      "x": 730,
+      "y": 780,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_167",
+      "kind": "pin",
+      "x": 700,
+      "y": 760,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_168",
+      "kind": "pin",
+      "x": 577.1227562651596,
+      "y": 804.4973603871777,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_169",
+      "kind": "pin",
+      "x": 670,
+      "y": 740,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_170",
+      "kind": "pin",
+      "x": 609.162502721196,
+      "y": 821.6749945576081,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_171",
+      "kind": "pin",
+      "x": 635.8125136059798,
+      "y": 800.837497278804,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_173",
+      "kind": "pin",
+      "x": 670,
+      "y": 780,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_174",
+      "kind": "pin",
+      "x": 574.9331414632355,
+      "y": 750.8796546338241,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_175",
+      "kind": "pin",
+      "x": 730,
+      "y": 740,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_176",
+      "kind": "pin",
+      "x": 604.9331414632355,
+      "y": 776.9598848779414,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_177",
+      "kind": "pin",
+      "x": 640,
+      "y": 760,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "bumper_44",
+      "kind": "bumper",
+      "x": 580,
+      "y": 690,
+      "r": 15,
+      "baseScore": 50,
+      "restitution": 1.4
+    },
+    {
+      "id": "pin_178",
+      "kind": "pin",
+      "x": 534.4473930415293,
+      "y": 749.3805345047647,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_179",
+      "kind": "pin",
+      "x": 546.2982620276861,
+      "y": 788.6348794355495,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_180",
+      "kind": "pin",
+      "x": 760,
+      "y": 760,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "bumper_45",
+      "kind": "bumper",
+      "x": 800,
+      "y": 760,
+      "r": 10,
+      "baseScore": 50,
+      "restitution": 1.2
+    },
+    {
+      "id": "pin_181",
+      "kind": "pin",
+      "x": 225.7202191025479,
+      "y": 370.27562752566854,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_182",
+      "kind": "pin",
+      "x": 580,
+      "y": 380,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_183",
+      "kind": "pin",
+      "x": 161.14404382050958,
+      "y": 371.4196713461781,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_184",
+      "kind": "pin",
+      "x": 100.94549076075172,
+      "y": 371.9633285336104,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_185",
+      "kind": "pin",
+      "x": 39.52725461962414,
+      "y": 372.9088192943621,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "bumper_3",
+      "kind": "bumper",
+      "x": 220,
+      "y": 630,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.3
+    },
+    {
+      "id": "bumper_7",
+      "kind": "bumper",
+      "x": 160,
+      "y": 630,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.3
+    },
+    {
+      "id": "bumper_8",
+      "kind": "bumper",
+      "x": 100,
+      "y": 630,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.3
+    },
+    {
+      "id": "bumper_9",
+      "kind": "bumper",
+      "x": 40,
+      "y": 630,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.3
+    },
+    {
+      "id": "bumper_10",
+      "kind": "bumper",
+      "x": 280,
+      "y": 630,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.3
+    },
+    {
+      "id": "pin_186",
+      "kind": "pin",
+      "x": 340,
+      "y": 640,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_187",
+      "kind": "pin",
+      "x": 330,
+      "y": 660,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "bumper_46",
+      "kind": "bumper",
+      "x": 190,
+      "y": 700,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.3
+    },
+    {
+      "id": "bumper_47",
+      "kind": "bumper",
+      "x": 130,
+      "y": 700,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.3
+    },
+    {
+      "id": "bumper_48",
+      "kind": "bumper",
+      "x": 60,
+      "y": 700,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.3
+    },
+    {
+      "id": "bumper_50",
+      "kind": "bumper",
+      "x": 250,
+      "y": 700,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.3
+    },
+    {
+      "id": "bumper_49",
+      "kind": "bumper",
+      "x": 0,
+      "y": 700,
+      "r": 10,
+      "baseScore": 50,
+      "restitution": 1.4
+    },
+    {
+      "id": "bumper_51",
+      "kind": "bumper",
+      "x": 200,
+      "y": 850,
+      "r": 18,
+      "baseScore": 50,
+      "restitution": 1.4
+    },
+    {
+      "id": "pin_197",
+      "kind": "pin",
+      "x": 48.852911219118226,
+      "y": 776.9598848779414,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_198",
+      "kind": "pin",
+      "x": 119.73256585294222,
+      "y": 802.0267434147058,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_199",
+      "kind": "pin",
+      "x": 190,
+      "y": 780,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_188",
+      "kind": "pin",
+      "x": 221.37386925547702,
+      "y": 751.373869255477,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_189",
+      "kind": "pin",
+      "x": 160,
+      "y": 750,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_190",
+      "kind": "pin",
+      "x": 220,
+      "y": 810,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_191",
+      "kind": "pin",
+      "x": 240,
+      "y": 780,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_192",
+      "kind": "pin",
+      "x": 270,
+      "y": 740,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_193",
+      "kind": "pin",
+      "x": 160,
+      "y": 830,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_194",
+      "kind": "pin",
+      "x": 280,
+      "y": 360,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_195",
+      "kind": "pin",
+      "x": 520,
+      "y": 360,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_200",
+      "kind": "pin",
+      "x": 380,
+      "y": 20,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_202",
+      "kind": "pin",
+      "x": 360,
+      "y": 0,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_203",
+      "kind": "pin",
+      "x": 320,
+      "y": 40,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_204",
+      "kind": "pin",
+      "x": 340,
+      "y": 60,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_205",
+      "kind": "pin",
+      "x": 300,
+      "y": 20,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_206",
+      "kind": "pin",
+      "x": 500,
+      "y": 20,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_207",
+      "kind": "pin",
+      "x": 480,
+      "y": 40,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_208",
+      "kind": "pin",
+      "x": 460,
+      "y": 60,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_209",
+      "kind": "pin",
+      "x": 420,
+      "y": 20,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_210",
+      "kind": "pin",
+      "x": 440,
+      "y": 0,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "bumper_52",
+      "kind": "bumper",
+      "x": 95.94651317058845,
+      "y": 748.8529112191181,
+      "r": 16,
+      "baseScore": 100,
+      "restitution": 1.3
+    },
+    {
+      "id": "bumper_53",
+      "kind": "bumper",
+      "x": 655.6985490346184,
+      "y": 831.0487990109086,
+      "r": 15,
+      "baseScore": 100,
+      "restitution": 1.2
+    },
+    {
+      "id": "bumper_54",
+      "kind": "bumper",
+      "x": 397.6355327137202,
+      "y": 441.0723522481127,
+      "r": 11,
+      "baseScore": 100,
+      "restitution": 1.2
+    },
+    {
+      "id": "pin_2",
+      "kind": "pin",
+      "x": 275.7274920979052,
+      "y": 311.50368878031253,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_1",
+      "kind": "pin",
+      "x": 491.05065681052145,
+      "y": 294.2026272420856,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "bumper_55",
+      "kind": "bumper",
+      "x": 368.7392118273744,
+      "y": 227.07692123058678,
+      "r": 11,
+      "baseScore": 100,
+      "restitution": 1.2
+    },
+    {
+      "id": "bumper_56",
+      "kind": "bumper",
+      "x": 389.1407142515363,
+      "y": 267.48217171436266,
+      "r": 11,
+      "baseScore": 100,
+      "restitution": 1.2
+    },
+    {
+      "id": "bumper_57",
+      "kind": "bumper",
+      "x": 433.0093841504187,
+      "y": 254.24014784217894,
+      "r": 11,
+      "baseScore": 100,
+      "restitution": 1.2
+    },
+    {
+      "id": "bumper_58",
+      "kind": "bumper",
+      "x": 346.44277908465995,
+      "y": 260.12757404071283,
+      "r": 11,
+      "baseScore": 50,
+      "restitution": 1.2
+    },
+    {
+      "id": "pin_100",
+      "kind": "pin",
+      "x": 312.3114449831471,
+      "y": 317.28705259269105,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_101",
+      "kind": "pin",
+      "x": 395.95497127949255,
+      "y": 312.6641626263969,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_102",
+      "kind": "pin",
+      "x": 443.0656650505588,
+      "y": 320.1763588216249,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_103",
+      "kind": "pin",
+      "x": 493.15197043156417,
+      "y": 319.4746715947393,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "bumper_59",
+      "kind": "bumper",
+      "x": 458.247655962593,
+      "y": 287.8461535384312,
+      "r": 11,
+      "baseScore": 100,
+      "restitution": 1.2
+    },
+    {
+      "id": "pin_104",
+      "kind": "pin",
+      "x": 403.8011248179238,
+      "y": 211.66603865640155,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_105",
+      "kind": "pin",
+      "x": 333.24202387218367,
+      "y": 291.3808660941105,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_106",
+      "kind": "pin",
+      "x": 422.7125359098699,
+      "y": 294.2161736835786,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.88
+    },
+    {
+      "id": "pin_107",
+      "kind": "pin",
+      "x": 389.4592478568676,
+      "y": 183.1092159709404,
+      "r": 6,
+      "baseScore": 100,
+      "restitution": 0.2
+    },
+    {
+      "id": "bumper_60",
+      "kind": "bumper",
+      "x": 363.96247139911605,
+      "y": 307.23451975216506,
+      "r": 11,
+      "baseScore": 100,
+      "restitution": 1.2
+    },
+    {
+      "id": "bumper_61",
+      "kind": "bumper",
+      "x": 453.6704563803632,
+      "y": 448.9159924569561,
+      "r": 11,
+      "baseScore": 100,
+      "restitution": 1.2
+    },
+    {
+      "id": "bumper_62",
+      "kind": "bumper",
+      "x": 346.4339967940882,
+      "y": 446.31105821599385,
+      "r": 11,
+      "baseScore": 100,
+      "restitution": 1.2
+    }
+  ],
+  "name": "固定初期マップ",
+  "stars": [
+    {
+      "id": "star_1",
+      "score": 1000000,
+      "bonus": 0,
+      "members": [
+        {
+          "id": "starm_1",
+          "x": 344.03517018400754,
+          "y": 25.25700401249003,
+          "r": 16
+        }
+      ]
+    },
+    {
+      "id": "star_2",
+      "score": 5000000,
+      "bonus": 0,
+      "members": [
+        {
+          "id": "starm_2",
+          "x": 456.2314455804617,
+          "y": 23.76855441953832,
+          "r": 16
+        }
+      ]
+    },
+    {
+      "id": "star_3",
+      "score": 10000000,
+      "bonus": 0,
+      "members": [
+        {
+          "id": "starm_3",
+          "x": 400.1568222726574,
+          "y": 829.5499833843555,
+          "r": 16
+        }
+      ]
+    },
+    {
+      "id": "star_4",
+      "score": 1000000,
+      "bonus": 0,
+      "members": [
+        {
+          "id": "starm_8",
+          "x": 578.5710216688192,
+          "y": 844.8252877408559,
+          "r": 22
+        }
+      ]
+    },
+    {
+      "id": "star_5",
+      "score": 1000000,
+      "bonus": 0,
+      "members": [
+        {
+          "id": "starm_14",
+          "x": 17.01257080179407,
+          "y": 670.7373259096089,
+          "r": 16
+        }
+      ]
+    }
+  ],
+  "starOffers": [
+    {
+      "id": "offer_1",
+      "weight": 6,
+      "group": {
+        "id": "offerGroup_1",
+        "score": 5000000,
+        "bonus": 10000000,
+        "members": [
+          {
+            "id": "starm_4",
+            "x": 177.8031696344802,
+            "y": 118.74417462152714,
+            "r": 18
+          },
+          {
+            "id": "starm_5",
+            "x": 606.1942119465152,
+            "y": 117.63147061552185,
+            "r": 18
+          }
+        ]
+      }
+    },
+    {
+      "id": "offer_2",
+      "weight": 2,
+      "group": {
+        "id": "offerGroup_2",
+        "score": 5000000,
+        "bonus": 20000000,
+        "members": [
+          {
+            "id": "starm_6",
+            "x": 160.7461870112816,
+            "y": 546.7466414752322,
+            "r": 22
+          },
+          {
+            "id": "starm_7",
+            "x": 160.67936937283835,
+            "y": 716.9012766844621,
+            "r": 22
+          }
+        ]
+      }
+    },
+    {
+      "id": "offer_3",
+      "weight": 2,
+      "group": {
+        "id": "offerGroup_3",
+        "score": 5000000,
+        "bonus": 60000000,
+        "members": [
+          {
+            "id": "starm_9",
+            "x": 668.510068178359,
+            "y": 426.40073485240396,
+            "r": 22
+          },
+          {
+            "id": "starm_10",
+            "x": 159.33671503034188,
+            "y": 408.0411187533168,
+            "r": 22
+          }
+        ]
+      }
+    },
+    {
+      "id": "offer_4",
+      "weight": 2,
+      "group": {
+        "id": "offerGroup_4",
+        "score": 5000000,
+        "bonus": 20000000,
+        "members": [
+          {
+            "id": "starm_11",
+            "x": 577.5810095116134,
+            "y": 204.87360700081834,
+            "r": 22
+          },
+          {
+            "id": "starm_12",
+            "x": 186.59462506545324,
+            "y": 357.41753729610053,
+            "r": 22
+          },
+          {
+            "id": "starm_13",
+            "x": 220.65783280129295,
+            "y": 544.0246753272224,
+            "r": 22
+          }
+        ]
+      }
+    },
+    {
+      "id": "offer_5",
+      "weight": 2,
+      "group": {
+        "id": "offerGroup_5",
+        "score": 5000000,
+        "bonus": 50000000,
+        "members": [
+          {
+            "id": "starm_15",
+            "x": 400,
+            "y": 640,
+            "r": 22
+          },
+          {
+            "id": "starm_16",
+            "x": 720,
+            "y": 540,
+            "r": 22
+          }
+        ]
+      }
+    },
+    {
+      "id": "offer_6",
+      "weight": 3,
+      "group": {
+        "id": "offerGroup_6",
+        "score": 10000000,
+        "bonus": 10000000,
+        "members": [
+          {
+            "id": "starm_17",
+            "x": 180,
+            "y": 200,
+            "r": 22
+          },
+          {
+            "id": "starm_18",
+            "x": 420,
+            "y": 340,
+            "r": 22
+          },
+          {
+            "id": "starm_19",
+            "x": 680,
+            "y": 720,
+            "r": 22
+          }
+        ]
+      }
+    }
+  ]
+}

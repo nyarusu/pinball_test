@@ -115,5 +115,10 @@
     "pinStroke": "#7d8da3",
     "bumperFill": "#f0b429",
     "bumperStroke": "#fff1c2"
-  }
+  },
+  "starColorTiers": [
+    { "minScore": 0, "fill": "#1a4f86", "stroke": "#8fd4ff" },
+    { "minScore": 5000000, "fill": "#1c6b3a", "stroke": "#7dffa8" },
+    { "minScore": 10000000, "fill": "#9a2430", "stroke": "#ffd27a" }
+  ]
 }

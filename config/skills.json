@@ -4,23 +4,30 @@
     {
       "id": "SK-01",
       "name": "チルト",
-      "enabled": true,
+      "enabled": false,
       "description": "全活動ボールへ 600px/s の斜め上速度を加算する。真上から左右へ 15°〜45°。",
-      "params": { "impulse": 600, "angleMinDeg": 15, "angleMaxDeg": 45 }
+      "params": { "impulse": 600, "angleMinDeg": 15, "angleMaxDeg": 45, "usesPerTrial": 1 }
     },
     {
       "id": "SK-02",
       "name": "上昇気流",
       "enabled": true,
-      "description": "全活動ボールの縦速度 vy に -800px/s を加算する。",
-      "params": { "vyAdd": -800 }
+      "description": "1球に3回。ボールを上へ押す",
+      "params": { "vyAdd": -800, "usesPerTrial": 3 }
     },
     {
       "id": "SK-03",
       "name": "フィーバー",
       "enabled": true,
-      "description": "全活動ボールの最終倍率を 360ステップ（3.0秒）のあいだ ×3.0 にする。",
-      "params": { "durationSteps": 360, "finalMult": 3 }
+      "description": "3秒間、得点が3倍",
+      "params": { "durationSteps": 360, "finalMult": 3, "usesPerTrial": 1 }
+    },
+    {
+      "id": "SK-04",
+      "name": "ピン破壊",
+      "enabled": true,
+      "description": "近くのピンだけ、このラウンド消える",
+      "params": { "radius": 120, "usesPerTrial": 1 }
     }
   ]
 }
