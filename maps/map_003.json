@@ -1126,7 +1126,7 @@
       "x": 550,
       "y": 550,
       "r": 6,
-      "baseScore": 100,
+      "baseScore": 150,
       "restitution": 0.88
     },
     {
@@ -1135,7 +1135,7 @@
       "x": 640,
       "y": 610,
       "r": 6,
-      "baseScore": 100,
+      "baseScore": 150,
       "restitution": 0.88
     },
     {
@@ -1144,7 +1144,7 @@
       "x": 670,
       "y": 590,
       "r": 6,
-      "baseScore": 100,
+      "baseScore": 150,
       "restitution": 0.88
     },
     {
@@ -1153,7 +1153,7 @@
       "x": 640,
       "y": 570,
       "r": 6,
-      "baseScore": 100,
+      "baseScore": 150,
       "restitution": 0.88
     },
     {
@@ -1171,7 +1171,7 @@
       "x": 700,
       "y": 570,
       "r": 6,
-      "baseScore": 100,
+      "baseScore": 150,
       "restitution": 0.88
     },
     {
@@ -1180,7 +1180,7 @@
       "x": 610,
       "y": 550,
       "r": 6,
-      "baseScore": 100,
+      "baseScore": 150,
       "restitution": 0.88
     },
     {
@@ -1189,7 +1189,7 @@
       "x": 550,
       "y": 630,
       "r": 6,
-      "baseScore": 100,
+      "baseScore": 150,
       "restitution": 0.88
     },
     {
@@ -1198,7 +1198,7 @@
       "x": 580,
       "y": 610,
       "r": 6,
-      "baseScore": 100,
+      "baseScore": 150,
       "restitution": 0.88
     },
     {
@@ -1216,7 +1216,7 @@
       "x": 610,
       "y": 630,
       "r": 6,
-      "baseScore": 100,
+      "baseScore": 150,
       "restitution": 0.88
     },
     {
@@ -1225,7 +1225,7 @@
       "x": 700,
       "y": 610,
       "r": 6,
-      "baseScore": 100,
+      "baseScore": 150,
       "restitution": 0.88
     },
     {
@@ -1234,7 +1234,7 @@
       "x": 610,
       "y": 590,
       "r": 6,
-      "baseScore": 100,
+      "baseScore": 150,
       "restitution": 0.88
     },
     {
@@ -1261,7 +1261,7 @@
       "x": 670,
       "y": 550,
       "r": 6,
-      "baseScore": 100,
+      "baseScore": 150,
       "restitution": 0.88
     },
     {
@@ -1270,7 +1270,7 @@
       "x": 550,
       "y": 590,
       "r": 6,
-      "baseScore": 100,
+      "baseScore": 150,
       "restitution": 0.88
     },
     {
@@ -1279,7 +1279,7 @@
       "x": 580,
       "y": 570,
       "r": 6,
-      "baseScore": 100,
+      "baseScore": 150,
       "restitution": 0.88
     },
     {
@@ -1288,7 +1288,7 @@
       "x": 670,
       "y": 630,
       "r": 6,
-      "baseScore": 100,
+      "baseScore": 150,
       "restitution": 0.88
     },
     {
@@ -2502,7 +2502,7 @@
   "stars": [
     {
       "id": "star_1",
-      "score": 1000000,
+      "score": 2000000,
       "bonus": 0,
       "members": [
         {
@@ -2515,7 +2515,7 @@
     },
     {
       "id": "star_2",
-      "score": 5000000,
+      "score": 10000000,
       "bonus": 0,
       "members": [
         {
@@ -2541,7 +2541,7 @@
     },
     {
       "id": "star_4",
-      "score": 1000000,
+      "score": 2000000,
       "bonus": 0,
       "members": [
         {
@@ -2564,6 +2564,19 @@
           "r": 16
         }
       ]
+    },
+    {
+      "id": "star_6",
+      "score": 1000000,
+      "bonus": 0,
+      "members": [
+        {
+          "id": "starm_23",
+          "x": 638,
+          "y": 344,
+          "r": 16
+        }
+      ]
     }
   ],
   "starOffers": [
@@ -2572,8 +2585,8 @@
       "weight": 6,
       "group": {
         "id": "offerGroup_1",
-        "score": 5000000,
-        "bonus": 10000000,
+        "score": 10000000,
+        "bonus": 5000000,
         "members": [
           {
             "id": "starm_4",
@@ -2615,11 +2628,11 @@
     },
     {
       "id": "offer_3",
-      "weight": 2,
+      "weight": 1,
       "group": {
         "id": "offerGroup_3",
-        "score": 5000000,
-        "bonus": 60000000,
+        "score": 10000000,
+        "bonus": 20000000,
         "members": [
           {
             "id": "starm_9",
@@ -2670,7 +2683,7 @@
       "weight": 2,
       "group": {
         "id": "offerGroup_5",
-        "score": 5000000,
+        "score": 1000000,
         "bonus": 50000000,
         "members": [
           {
@@ -2690,11 +2703,11 @@
     },
     {
       "id": "offer_6",
-      "weight": 3,
+      "weight": 2,
       "group": {
         "id": "offerGroup_6",
         "score": 10000000,
-        "bonus": 10000000,
+        "bonus": 40000000,
         "members": [
           {
             "id": "starm_17",
@@ -2712,6 +2725,35 @@
             "id": "starm_19",
             "x": 680,
             "y": 720,
+            "r": 22
+          }
+        ]
+      }
+    },
+    {
+      "id": "offer_7",
+      "weight": 1,
+      "group": {
+        "id": "offerGroup_7",
+        "score": 10000000,
+        "bonus": 30000000,
+        "members": [
+          {
+            "id": "starm_20",
+            "x": 20,
+            "y": 560,
+            "r": 22
+          },
+          {
+            "id": "starm_21",
+            "x": 680,
+            "y": 660,
+            "r": 22
+          },
+          {
+            "id": "starm_22",
+            "x": 400,
+            "y": 600,
             "r": 22
           }
         ]

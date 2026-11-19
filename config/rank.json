@@ -1,11 +1,15 @@
 {
   "standard": [
+    { "rank": "GOD", "minScore": 1000000000 },
+    { "rank": "SS", "minScore": 200000000 },
     { "rank": "S", "minScore": 100000000 },
-    { "rank": "A", "minScore": 10000000 },
-    { "rank": "B", "minScore": 1000000 },
-    { "rank": "C", "minScore": 100000 }
+    { "rank": "A", "minScore": 40000000 },
+    { "rank": "B", "minScore": 20000000 },
+    { "rank": "C", "minScore": 10000000 }
   ],
   "short": [
+    { "rank": "GOD", "minScore": 100000000 },
+    { "rank": "SS", "minScore": 10000000 },
     { "rank": "S", "minScore": 1000000 },
     { "rank": "A", "minScore": 100000 },
     { "rank": "B", "minScore": 10000 },

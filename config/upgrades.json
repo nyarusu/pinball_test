@@ -8,10 +8,10 @@
       "enabled": true,
       "stackable": true,
       "rarity": "c",
-      "description": "ヒット時、スコアが\n+250 される。\n（重複可）\n範囲は広域。",
+      "description": "当たったときの\nスコアに +300 される。\n（広い範囲に設置・\n重ねがけOK）",
       "params": {
         "radius": 130,
-        "fixedAdd": 250
+        "fixedAdd": 300
       }
     },
     {
@@ -22,7 +22,7 @@
       "enabled": true,
       "stackable": true,
       "rarity": "r",
-      "description": "ヒット時のスコアが\n3倍になる。\n重複すると掛け算。\n範囲は狭い。",
+      "description": "当たったときの\nスコアが 3倍になる。\n重ねると3倍×3倍…と\n跳ね上がる。\n（狭い範囲に設置・\n重ねがけOK）",
       "params": {
         "radius": 50,
         "normalMult": 3
@@ -36,11 +36,10 @@
       "enabled": true,
       "stackable": true,
       "rarity": "c",
-      "description": "ヒットするたび、\n次のヒットから\nこのピンの倍率が\n永続で +40%。\n最大 +1000%。\n連鎖や複製でも成長。\n（重複可）",
+      "description": "当たるたびにこのピンが\n育ち、次から倍率が\n+60% ずつ上昇（永続）。\n（上限なし／\n重ねがけOK）",
       "params": {
         "radius": 90,
-        "growthAdd": 0.4,
-        "growthCap": 10
+        "growthAdd": 0.6
       }
     },
     {
@@ -51,7 +50,7 @@
       "enabled": true,
       "stackable": false,
       "rarity": "c",
-      "description": "ヒット時、他のピンを\n最大2つ、無作為に\n同時に発動する。\n同じピンは選ばない。\n強化も適用される。\n再連鎖はしない。\n（重複不可）",
+      "description": "当たると、別のピンを\nランダムで最大2つ\n同時に起動する。\n（起動先の強化効果も\n発動／重ねがけ不可）",
       "params": {
         "radius": 90,
         "depth": 1,
@@ -65,8 +64,8 @@
       "handler": "pinDensity",
       "enabled": true,
       "stackable": true,
-      "rarity": "r",
-      "description": "ヒット時、周囲のピン\n1つにつきスコア +80。\n（重複可）",
+      "rarity": "c",
+      "description": "当たったとき、\nまわりにあるピンの数\n× 80 のボーナス点を\n獲得。（重ねがけOK）",
       "params": {
         "radius": 90,
         "neighborRadius": 90,
@@ -81,11 +80,11 @@
       "enabled": true,
       "stackable": false,
       "rarity": "r",
-      "description": "10コンボ以上で、\nこのピンのスコアが\n4倍になる。\n（重複不可）\n範囲は狭い。",
+      "description": "200コンボ以上のとき、\nこのピンのスコアが\n4.5倍に跳ね上がる。\n（狭い範囲に設置／\n重ねがけ不可）",
       "params": {
-        "radius": 60,
-        "comboThreshold": 10,
-        "finalMult": 4
+        "radius": 70,
+        "comboThreshold": 200,
+        "finalMult": 4.5
       }
     },
     {
@@ -96,12 +95,12 @@
       "enabled": true,
       "stackable": false,
       "rarity": "r",
-      "description": "反発が大きく上がる。\nヒット時のスコアが\n+50 される。\n（重複不可）\n範囲は広域。",
+      "description": "ピンが強く弾むように\nなり、スコアが +150\nされる。\n（広い範囲に設置／\n重ねがけ不可）",
       "params": {
         "radius": 130,
         "restitutionAdd": 0.3,
         "restitutionCap": 1.2,
-        "fixedAdd": 50
+        "fixedAdd": 150
       }
     },
     {
@@ -112,7 +111,7 @@
       "enabled": true,
       "stackable": false,
       "rarity": "r",
-      "description": "球が速いほど、\nスコア倍率が増える。\n最大は 11倍。\n（重複不可）",
+      "description": "球のスピードが速いほど\nスコア倍率がアップ。\n最大で 11倍。\n（重ねがけ不可）",
       "params": {
         "radius": 90,
         "speedDivisor": 300,
@@ -126,8 +125,8 @@
       "handler": "pinComboBooster",
       "enabled": true,
       "stackable": false,
-      "rarity": "c",
-      "description": "物理・ビーム・連鎖・\nエコーでコンボ +1。\n上乗せせず、複製では\n増えない。\n踏んだピン1種ごとに\n倍率の上限が +4。\n10→14→18。\n同じピンは1回だけ。\n（重複不可）",
+      "rarity": "r",
+      "description": "当たるとコンボが +1\nされ、さらにコンボ倍率の\n上限が +4 引き上がる。\n（10倍→14倍→18倍…／\n別のピンを踏むたびに\n上限アップ／\n重ねがけ不可）",
       "params": {
         "radius": 90,
         "comboAdd": 1,
@@ -142,7 +141,7 @@
       "enabled": true,
       "stackable": false,
       "rarity": "ur",
-      "description": "ヒットするたび、\n球が回収されるまで\n強化済みピンの倍率が\n+40% ずつ累積する。\n上限はない。\n次のヒットから効く。\n連鎖でも発動する。\n（重複不可）",
+      "description": "このピンに当たるたび、\nその球が落ちるまで\n「すべての強化済み\nピン」の倍率が\n+40% ずつ上昇。\n上限なし。\n（重ねがけ不可）",
       "params": {
         "radius": 90,
         "resonanceAdd": 0.4
@@ -156,7 +155,7 @@
       "enabled": true,
       "stackable": true,
       "rarity": "sr",
-      "description": "通過すると3秒間、\n獲得スコアが3倍。\n最大2回まで重なり、\n2つで9倍になる。\n3つ目は時間を延長。",
+      "description": "通過すると3秒間、\nすべてのスコアが\n3倍になる。\n2つ重ねれば 9倍になる。\n（それ以降は\n効果時間を延長）",
       "params": {
         "radius": 80,
         "durationSteps": 360,
@@ -167,20 +166,6 @@
       }
     },
     {
-      "id": "AR-02",
-      "name": "加点エリア",
-      "category": "AR",
-      "handler": "areaFixedAdd",
-      "enabled": true,
-      "stackable": true,
-      "rarity": "c",
-      "description": "エリア内のピンを\nヒットすると、\nスコアが +400。\n重なると加算される。",
-      "params": {
-        "radius": 80,
-        "fixedAdd": 400
-      }
-    },
-    {
       "id": "AR-03",
       "name": "ボール倍率エリア",
       "category": "AR",
@@ -188,7 +173,7 @@
       "enabled": true,
       "stackable": true,
       "rarity": "sr",
-      "description": "通過するたび、\nその球の倍率が\n+100%（+1倍）。\n同じエリアは\n0.5秒ごとに再発動。",
+      "description": "通過するたび、\nその球のスコア倍率が\n+100% アップ。\n（0.5秒ごとに\n発動可能）",
       "params": {
         "radius": 80,
         "ballMultAdd": 1,
@@ -203,7 +188,7 @@
       "enabled": true,
       "stackable": true,
       "rarity": "sr",
-      "description": "エリア内にいる間、\n0.1秒ごとに\nコンボ +1 と、\n球の倍率 +10%。",
+      "description": "エリアの中に\nいるあいだ、\n0.1秒ごとに\nコンボ +1、\n球の倍率 +10%。",
       "params": {
         "radius": 80,
         "tickSteps": 12,
@@ -219,7 +204,7 @@
       "enabled": true,
       "stackable": true,
       "rarity": "r",
-      "description": "エリア内のヒットで、\n50%の確率でもう1回。\n重ねても追加は1回。",
+      "description": "エリア内でピンに\n当たると、50%の確率で\nもう1回分の効果が発動。\n（複数置いても\n追加は1回まで）",
       "params": {
         "radius": 80,
         "chance": 0.5
@@ -232,16 +217,17 @@
       "handler": "areaVortex",
       "enabled": true,
       "stackable": true,
-      "rarity": "r",
-      "description": "ボールを時計回りに\n回して中心へ引く。\n3秒続くと一旦解除。\n出て0.5秒で再起動。",
+      "rarity": "sr",
+      "description": "渦の力で球をぐるぐる\n中心へ引き寄せ、\nエリア内のピン得点を\n2倍にする。\n（2秒吸い寄せると\n一休みし、\n外に出るとすぐ復活）",
       "params": {
         "radius": 80,
         "pullAccel": 400,
         "tangentAccel": 250,
         "fadeRadius": 15,
         "accelCap": 1000,
-        "maxStaySteps": 360,
-        "cooldownSteps": 60
+        "maxStaySteps": 240,
+        "cooldownSteps": 60,
+        "hitMult": 2
       }
     },
     {
@@ -251,12 +237,13 @@
       "handler": "areaAntigravity",
       "enabled": true,
       "stackable": true,
-      "rarity": "c",
-      "description": "落下中に入ると、\n上へ強く跳ね上げる。\n同じエリアは\n1.5秒ごとに再発動。",
+      "rarity": "r",
+      "description": "落ちてきた球を真上へ\n強く弾き返し、\nその球の倍率を +25%\nする。\n（1.5秒ごとに再発動）",
       "params": {
         "radius": 80,
         "minUpSpeed": 600,
-        "cooldownSteps": 180
+        "cooldownSteps": 180,
+        "ballMultAdd": 0.25
       }
     },
     {
@@ -267,7 +254,7 @@
       "enabled": true,
       "stackable": true,
       "rarity": "c",
-      "description": "通過時、直前に直接\nヒットしたピンを\n最大3つ、もう一度\nその場で発動する。\n同じエリアは\n0.3秒ごとに再発動。",
+      "description": "通過すると、直前に\n当てた強化ピン\n（最大3つ）の効果が\nもう一度その場で\n発動する。\n（0.3秒ごとに再発動）",
       "params": {
         "radius": 80,
         "recentPinCount": 3,
@@ -283,7 +270,7 @@
       "enabled": true,
       "stackable": true,
       "rarity": "c",
-      "description": "通過すると速度 +60%。\n3秒間、連続ヒットの\n間隔が半分になる。\n最大2回分まで延長。",
+      "description": "通過すると球が急加速\n（+60%）。\n3秒間、ピンの得点が\n2倍になり、連続ヒットが\n起こりやすくなる。\n（2回分まで時間延長）",
       "params": {
         "radius": 80,
         "speedMult": 1.6,
@@ -291,7 +278,8 @@
         "durationSteps": 360,
         "collisionCdSteps": 3,
         "reenterCdSteps": 12,
-        "slots": 2
+        "slots": 2,
+        "hitMult": 2
       }
     },
     {
@@ -303,11 +291,11 @@
       "stackable": false,
       "rarity": "c",
       "targetKind": "bumper",
-      "description": "【バンパー専用】\n直接ヒットすると、\n120px以内の連爆を\n近い順に最大3個、\n同時に発動する。\n再連鎖も複製もなし。\n（重複不可）",
+      "description": "【バンパー専用】\n直接当たると、\n近くにある別の\n「連爆」バンパーを\n最大4つまで\n同時に誘爆させる。\n（重ねがけ不可）",
       "params": {
         "radius": 90,
         "blastRadius": 120,
-        "maxTargets": 3
+        "maxTargets": 4
       }
     },
     {
@@ -319,7 +307,7 @@
       "stackable": false,
       "rarity": "sr",
       "targetKind": "pin",
-      "description": "【通常ピン専用】\n直接ヒットで1つ\nチャージする。\nバンパーに当たると\n消費される。\n次のヒットから\n倍率が +25%。\n累計の最大は +600%。\n（重複不可）",
+      "description": "【通常ピン専用】\n直接当ててチャージし、\nバンパーに当てると消費。\nその球の倍率が +25%\nされ、次のヒットから\n反映される。\n再チャージ可。\n（最大 +600%／\n重ねがけ不可）",
       "params": {
         "radius": 90,
         "ballMultAdd": 0.25,
@@ -334,10 +322,11 @@
       "enabled": true,
       "stackable": false,
       "rarity": "ur",
-      "description": "ヒット時、ほぼ同じ\n高さにある他のピンも\n同時に発動する。\n再連鎖はしない。",
+      "description": "当たると真横に\nビームを放ち、\n同じ高さのピンを\nまとめて起動させ、\nコンボを5加算。",
       "params": {
         "radius": 90,
-        "bandPx": 15
+        "bandPx": 15,
+        "comboAdd": 5
       }
     },
     {
@@ -350,7 +339,7 @@
       "instant": true,
       "rarity": "ur",
       "stageWeights": { "early": 0.5 },
-      "description": "選んだ瞬間に、\n用意された配置から\nスターが1つ出る。\n置く操作は不要。",
+      "description": "選んだその場で、\n盤面にボーナス星が\n新たに出現する。\n（配置操作なし・\n即発動）",
       "params": {
         "radius": 1
       }

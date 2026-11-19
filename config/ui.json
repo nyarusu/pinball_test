@@ -30,7 +30,10 @@
       "skill": 0.25,
       "roundStart": 0.5,
       "result": 0.5,
-      "fanfare": 2.0
+      "fanfare": 2.0,
+      "beam": 0.06,
+      "milestone": 0.2,
+      "rank": 0.2
     },
     "files": {
       "hitLow": "./audio/hit_low.mp3",
@@ -102,14 +105,64 @@
       "arpVolume": 0.35,
       "bassVolume": 0.6,
       "lookaheadSec": 0.6
-    }
+    },
+    "compressor": { "threshold": -18, "knee": 12, "ratio": 4, "attack": 0.003, "release": 0.12 },
+    "hitLayers": {
+      "harmonicMin": 100000,
+      "sparkleMin": 1000000,
+      "chordMin": 10000000,
+      "heavyIntervalSec": 0.09,
+      "lowpassHz": 4200,
+      "fifthRatio": 1.5,
+      "harmonicDecaySec": 0.05,
+      "harmonicVolume": 0.12,
+      "bassHz": 70,
+      "bassDecaySec": 0.05,
+      "bassVolume": 0.32,
+      "sparkleMaxHz": 2400,
+      "sparkleDecaySec": 0.06,
+      "sparkleVolume": 0.14,
+      "chordRootHz": 523.25,
+      "chordRatios": [1, 1.25, 1.5],
+      "chordStepSec": 0.02,
+      "chordDecaySec": 0.08,
+      "chordVolume": 0.16
+    },
+    "cue": {
+      "rates": [1, 1.25, 1.5],
+      "stepSec": 0.03,
+      "noteSec": 0.22,
+      "rootHz": 784,
+      "volume": 0.28
+    },
+    "rankRates": { "C": 1, "B": 1.06, "A": 1.12, "S": 1.2, "SS": 1.26, "GOD": 1.33 },
+    "skills": {
+      "wind": { "durationSec": 0.25, "startHz": 280, "endHz": 2200, "q": 1.4, "volume": 0.28 },
+      "fever": {
+        "wave": "sine",
+        "steps": [[523.25], [659.25], [783.99]],
+        "stepSec": 0.07,
+        "noteSec": 0.2,
+        "volume": 0.24
+      },
+      "smash": {
+        "bassHz": 70,
+        "bassDecaySec": 0.12,
+        "bassVolume": 0.4,
+        "noiseDecaySec": 0.08,
+        "noiseVolume": 0.22,
+        "noiseHpHz": 1800
+      }
+    },
+    "star": { "greenRate": 0.82, "greenDecaySec": 0.09, "appearRate": 1.25, "decaySec": 0.12 },
+    "beam": { "startHz": 1400, "endHz": 3200, "durationSec": 0.08, "volume": 0.22 }
   },
   "pinColors": {
     "scoreBaseline": 100,
     "restitutionBaseline": 0.88,
-    "scoreThresholds": [0, 0.5, 1, 1.000001, 3, 7],
-    "scoreFills": ["#8ea0b4", "#c5ceda", "#e7eef8", "#ffd0a6", "#ff3a40", "#ff46d0"],
-    "bumperCores": ["#8ea0b4", "#c5ceda", "#fff6d8", "#ffd0a6", "#ff3a40", "#ff46d0"],
+    "scoreThresholds": [0, 0.5, 1, 1.000001, 2, 4, 7, 15, 40],
+    "scoreFills": ["#8ea0b4", "#c5ceda", "#e7eef8", "#4aa8ff", "#4ade80", "#b57bff", "#ff5c5c", "#c62828", "#ffd15c"],
+    "bumperCores": ["#8ea0b4", "#c5ceda", "#e7eef8", "#4aa8ff", "#4ade80", "#b57bff", "#ff5c5c", "#c62828", "#ffd15c"],
     "restitutionThresholds": [0.001, 0.15, 0.29],
     "restitutionMarks": ["#b7fff6", "#3ddec8", "#0a9e86"],
     "pinStroke": "#7d8da3",

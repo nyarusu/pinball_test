@@ -34,7 +34,7 @@
     "areaReenter": 12,
     "areaCooldownDefault": 60,
     "areaCooldownAntigravity": 180,
-    "vortexMaxStay": 360,
+    "vortexMaxStay": 240,
     "vortexRestartCooldown": 60,
     "buffDuration": 360
   },
@@ -60,13 +60,12 @@
   "limits": {
     "maxAreas": 8,
     "maxPinUpgrades": 5,
-    "rerollsPerRun": 2,
+    "rerollsPerRun": 3,
     "scoreCap": 9000000000000000,
     "historyLimit": 2000,
     "deriveDepth": 1,
     "eventsPerCollision": 64,
     "eventsPerBall": 5000,
-    "growthCap": 10,
     "comboMultCap": 10,
     "comboStep": 0.05,
     "maxRescues": 3,
