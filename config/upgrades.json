@@ -50,7 +50,7 @@
       "enabled": true,
       "stackable": false,
       "rarity": "c",
-      "description": "当たると、別のピンを\nランダムで最大2つ\n同時に起動する。\n（起動先の強化効果も\n発動／重ねがけ不可）",
+      "description": "当たると、別のピンを\nランダムで最大2つ\n同時に起動する。\n（起動先の強化効果も\n発動／同カード重ねがけ不可）",
       "params": {
         "radius": 90,
         "depth": 1,
@@ -80,7 +80,7 @@
       "enabled": true,
       "stackable": false,
       "rarity": "r",
-      "description": "200コンボ以上のとき、\nこのピンのスコアが\n4.5倍に跳ね上がる。\n（狭い範囲に設置／\n重ねがけ不可）",
+      "description": "200コンボ以上のとき、\nこのピンのスコアが\n4.5倍に跳ね上がる。\n（狭い範囲に設置／\n同カード重ねがけ不可）",
       "params": {
         "radius": 70,
         "comboThreshold": 200,
@@ -95,7 +95,7 @@
       "enabled": true,
       "stackable": false,
       "rarity": "r",
-      "description": "ピンが強く弾むように\nなり、スコアが +150\nされる。\n（広い範囲に設置／\n重ねがけ不可）",
+      "description": "ピンが強く弾むように\nなり、スコアが +150\nされる。\n（広い範囲に設置／\n同カード重ねがけ不可）",
       "params": {
         "radius": 130,
         "restitutionAdd": 0.3,
@@ -111,7 +111,7 @@
       "enabled": true,
       "stackable": false,
       "rarity": "r",
-      "description": "球のスピードが速いほど\nスコア倍率がアップ。\n最大で 11倍。\n（重ねがけ不可）",
+      "description": "球のスピードが速いほど\nスコア倍率がアップ。\n最大で 11倍。\n（同カード重ねがけ不可）",
       "params": {
         "radius": 90,
         "speedDivisor": 300,
@@ -126,7 +126,7 @@
       "enabled": true,
       "stackable": false,
       "rarity": "r",
-      "description": "当たるとコンボが +1\nされ、さらにコンボ倍率の\n上限が +4 引き上がる。\n（10倍→14倍→18倍…／\n別のピンを踏むたびに\n上限アップ／\n重ねがけ不可）",
+      "description": "当たるとコンボが +1\nされ、さらにコンボ倍率の\n上限が +4 引き上がる。\n（10倍→14倍→18倍…／\n別のピンを踏むたびに\n上限アップ／\n同カード重ねがけ不可）",
       "params": {
         "radius": 90,
         "comboAdd": 1,
@@ -141,7 +141,7 @@
       "enabled": true,
       "stackable": false,
       "rarity": "ur",
-      "description": "このピンに当たるたび、\nその球が落ちるまで\n「すべての強化済み\nピン」の倍率が\n+40% ずつ上昇。\n上限なし。\n（重ねがけ不可）",
+      "description": "このピンに当たるたび、\nその球が落ちるまで\n「すべての強化済み\nピン」の倍率が\n+40% ずつ上昇。\n上限なし。\n（同カード重ねがけ不可）",
       "params": {
         "radius": 90,
         "resonanceAdd": 0.4
@@ -291,7 +291,7 @@
       "stackable": false,
       "rarity": "c",
       "targetKind": "bumper",
-      "description": "【バンパー専用】\n直接当たると、\n近くにある別の\n「連爆」バンパーを\n最大4つまで\n同時に誘爆させる。\n（重ねがけ不可）",
+      "description": "【大きな黄色の丸】\n（バンパー）専用\n直接当たると、\n近くにある別の\n「連爆」の丸を\n最大4つまで\n同時に誘爆させる。\n（同カード重ねがけ不可）",
       "params": {
         "radius": 90,
         "blastRadius": 120,
@@ -307,7 +307,7 @@
       "stackable": false,
       "rarity": "sr",
       "targetKind": "pin",
-      "description": "【通常ピン専用】\n直接当ててチャージし、\nバンパーに当てると消費。\nその球の倍率が +25%\nされ、次のヒットから\n反映される。\n再チャージ可。\n（最大 +600%／\n重ねがけ不可）",
+      "description": "【通常ピン専用】\n直接当ててチャージし、\n大きな黄色の丸\n（バンパー）で消費。\nその球の倍率が +25%\n次のヒットから反映。\n再チャージ可。\n（最大 +600%／\n同カード重ねがけ不可）",
       "params": {
         "radius": 90,
         "ballMultAdd": 0.25,

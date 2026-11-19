@@ -15,13 +15,13 @@
       "rarityWeights": { "c": 25, "r": 35, "sr": 25, "ur": 15 }
     }
   ],
-  "trialTimeoutSec": 55,
+  "trialTimeoutSec": 100,
   "fixedHz": 120,
   "maxStepsPerFrame": 8,
   "steps": {
-    "trialTimeout": 6600,
+    "trialTimeout": 12000,
     "chargeMax": 120,
-    "chargeHoldMax": 600,
+    "chargeHoldMax": 840,
     "laneMove": 54,
     "relaunchSuppress": 24,
     "skillInputGuard": 12,
@@ -51,7 +51,7 @@
     "launchJitterRatio": 0.01,
     "angleAdjustDeg": 20,
     "angleDragPx": 120,
-    "angleKeySteps": 60,
+    "angleKeySteps": 120,
     "angleOvershootPx": 80,
     "grazeSpeed": 50,
     "rescueImpulse": 300,

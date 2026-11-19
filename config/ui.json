@@ -9,7 +9,17 @@
     "man": 10000,
     "oku": 100000000,
     "cho": 1000000000000,
-    "kei": 10000000000000000
+    "kei": 10000000000000000,
+    "floatTiers": [
+      { "minScore": 0, "fontPx": 22, "fill": "#fff6d4", "stroke": "", "strokePx": 0, "pop": 0, "popSteps": 0, "grains": 0, "ringPx": 0, "ringSteps": 0, "ringWidth": 0, "shake": 0, "shakeCd": 0 },
+      { "minScore": 1000, "fontPx": 26, "fill": "#ffe14a", "stroke": "", "strokePx": 0, "pop": 0, "popSteps": 0, "grains": 0, "ringPx": 0, "ringSteps": 0, "ringWidth": 0, "shake": 0, "shakeCd": 0 },
+      { "minScore": 10000, "fontPx": 30, "fill": "#ff9a3c", "stroke": "", "strokePx": 0, "pop": 1.2, "popSteps": 8, "grains": 0, "ringPx": 0, "ringSteps": 0, "ringWidth": 0, "shake": 0, "shakeCd": 0 },
+      { "minScore": 100000, "fontPx": 34, "fill": "#ff4d8d", "stroke": "#ffffff", "strokePx": 3, "pop": 0, "popSteps": 0, "grains": 6, "ringPx": 0, "ringSteps": 0, "ringWidth": 0, "shake": 0, "shakeCd": 0 },
+      { "minScore": 1000000, "fontPx": 40, "fill": "#ffd15c", "stroke": "#1a1208", "strokePx": 4, "pop": 0, "popSteps": 0, "grains": 12, "ringPx": 36, "ringSteps": 18, "ringWidth": 2, "shake": 2, "shakeCd": 30 },
+      { "minScore": 10000000, "fontPx": 46, "fill": "#fff8ee", "stroke": "#ffffff", "strokePx": 6, "pop": 0, "popSteps": 0, "grains": 0, "ringPx": 72, "ringSteps": 24, "ringWidth": 3, "shake": 4, "shakeCd": 60 },
+      { "minScore": 100000000, "fontPx": 56, "fill": "#ffd15c", "stroke": "#1a1208", "strokePx": 5, "pop": 1.35, "popSteps": 10, "grains": 16, "ringPx": 96, "ringSteps": 28, "ringWidth": 4, "shake": 4, "shakeCd": 45 },
+      { "minScore": 1000000000, "fontPx": 64, "fill": "#fff4c4", "stroke": "#ffd15c", "strokePx": 6, "pop": 1.5, "popSteps": 12, "grains": 20, "ringPx": 120, "ringSteps": 32, "ringWidth": 5, "shake": 4, "shakeCd": 45 }
+    ]
   },
   "nameEntry": { "maxLength": 3, "buttonSize": 48 },
   "rankingSize": 5,
