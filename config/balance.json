@@ -1,7 +1,18 @@
 {
   "modes": [
     { "id": "standard", "label": "スタンダード", "totalRounds": 5, "ballsPerRound": 2, "durationLabel": "約6分" },
-    { "id": "short", "label": "ショート", "totalRounds": 4, "ballsPerRound": 2, "durationLabel": "約4分" }
+    {
+      "id": "short",
+      "label": "ハイパーロール",
+      "totalRounds": 3,
+      "ballsPerRound": 2,
+      "durationLabel": "約3分・高レア限定",
+      "initialBallMult": 2,
+      "comboStep": 0.1,
+      "comboMultCap": 15,
+      "rarityWeights": { "c": 0, "r": 0, "sr": 70, "ur": 30 },
+      "stageId": "late"
+    }
   ],
   "progressStages": [
     {
