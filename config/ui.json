@@ -3,6 +3,7 @@
   "board": { "width": 800, "height": 1000, "fitScale": 0.72 },
   "scoreDisplay": {
     "countUpSec": 0.3,
+    "followTauSec": 0.12,
     "floatTextPool": 50,
     "floatTextMaxPerSec": 30,
     "hitShakeSec": 0.15,
@@ -178,6 +179,16 @@
     "pinStroke": "#7d8da3",
     "bumperFill": "#f0b429",
     "bumperStroke": "#fff1c2"
+  },
+  "areaColors": {
+    "AR-01": "#d946ef",
+    "AR-03": "#2dd4bf",
+    "AR-04": "#fb923c",
+    "AR-05": "#e2e8f0",
+    "AR-07": "#60a5fa",
+    "AR-08": "#a3e635",
+    "AR-09": "#c084fc",
+    "AR-10": "#f472b6"
   },
   "starColorTiers": [
     { "minScore": 0, "fill": "#1a4f86", "stroke": "#8fd4ff" },
