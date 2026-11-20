@@ -76,7 +76,7 @@
     "historyLimit": 2000,
     "deriveDepth": 1,
     "eventsPerCollision": 64,
-    "eventsPerBall": 5000,
+    "eventsPerBall": 1000000,
     "comboMultCap": 10,
     "comboStep": 0.05,
     "maxRescues": 3,
